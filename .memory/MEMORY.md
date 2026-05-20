@@ -1,0 +1,16 @@
+# Memory Index
+
+- cron_task_execution_policy: When a cron task triggers, the agent should attempt to complete the task described in the prompt. [user]
+- shangqiu_location: 商丘坐标: 34.4143, 115.65613 [reference]
+- ncm_cli_search_extract_pattern: ncm-cli 搜索后用 node 管道提取关键字段防止 compact [project]
+- no_stderr_redirect_in_bash: 执行 bash 命令不要加 2>&1 -- 这是高频违规项，每次都必须检查 [feedback]
+- ncm_cli_play_workflow: Correct workflow for playing a song with ncm-cli [project]
+- career_interest_java_internship: User is looking for Java-related internships [user]
+- user_name_and_background: User's surname and academic background [user]
+- skip_mpv_verification: 用户要求跳过 mpv 验证步骤 [user]
+- ncm_cli_search_limit_zero: 网易云搜索限制返回10条结果 [project]
+- user_qinhuangdao_location: User's location preference Qinhuangdao [reference]
+- weather_always_use_coordinates: 查询天气一律使用经纬度坐标，不要用城市名查询 [feedback]
+- no_emoji_in_output: Windows cmd 不支持表情，以后回复不要使用 emoji [user]
+- prefer_commented_code: User prefers code with comments [user]
+- qinhuangdao_weather_use_coordinates: 查询秦皇岛天气必须直接用经纬度，不要用汉字"秦皇岛"搜索 [feedback]

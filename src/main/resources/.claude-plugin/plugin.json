@@ -1,0 +1,10 @@
+{
+  "name": "my-official-mcp",
+  "version": "1.0.0",
+  "mcpServers": {
+    "weather": {
+      "command": "npx",
+      "args": ["-y", "open-meteo-mcp-lite"]
+    }
+  }
+}
