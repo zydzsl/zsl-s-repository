@@ -1,0 +1,21 @@
+#配置数据库的链接信息
+spring:
+  application: { name: web }
+  datasource:
+    url: jdbc:mysql://localhost:3306/dtp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 1234
+  servlet:
+    multipart:
+#      //设置上传文件大小
+      max-file-size: 10MB
+#      设置请求大小
+      max-request-size: 10MB
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+server:
+  port: 8080

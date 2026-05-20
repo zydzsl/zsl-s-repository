@@ -1,0 +1,92 @@
+2026-03-28 16:01:25.436 [main] INFO  zsl.web.WebApplication - Starting WebApplication using Java 25.0.2 with PID 18864 (E:\VS\visual\Tilas\web\target\classes started by zzzzz in E:\VS\visual\Tilas)
+2026-03-28 16:01:25.440 [main] INFO  zsl.web.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-28 16:01:26.381 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 16:01:26.393 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:01:26.394 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 16:01:26.395 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-28 16:01:26.444 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 949 ms
+2026-03-28 16:01:27.041 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:01:27.071 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 16:01:27.076 [main] INFO  zsl.web.WebApplication - Started WebApplication in 2.026 seconds (process running for 3.258)
+2026-03-28 16:01:35.955 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 16:01:35.964 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 16:12:02.476 [main] INFO  zsl.web.WebApplication - Starting WebApplication using Java 25.0.2 with PID 3316 (E:\VS\visual\Tilas\web\target\classes started by zzzzz in E:\VS\visual\Tilas)
+2026-03-28 16:12:02.479 [main] INFO  zsl.web.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-28 16:12:03.285 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 16:12:03.295 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:12:03.296 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 16:12:03.296 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-28 16:12:03.339 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 816 ms
+2026-03-28 16:12:03.880 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:12:03.908 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 16:12:03.913 [main] INFO  zsl.web.WebApplication - Started WebApplication in 1.794 seconds (process running for 2.593)
+2026-03-28 16:12:05.581 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 16:12:05.582 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 16:12:05.583 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-28 16:12:05.617 [http-nio-8080-exec-2] INFO  zsl.web.controller.empcontroller - 查询了id为1的部门数据
+2026-03-28 16:12:05.637 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 16:12:06.105 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bad7265
+2026-03-28 16:12:06.107 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 16:14:18.516 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 16:14:18.521 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 16:14:18.523 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 16:14:18.527 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 16:14:21.471 [main] INFO  zsl.web.WebApplication - Starting WebApplication using Java 25.0.2 with PID 18900 (E:\VS\visual\Tilas\web\target\classes started by zzzzz in E:\VS\visual\Tilas)
+2026-03-28 16:14:21.477 [main] INFO  zsl.web.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-28 16:14:22.318 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 16:14:22.329 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:14:22.330 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 16:14:22.330 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-28 16:14:22.372 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 850 ms
+2026-03-28 16:14:22.868 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:14:22.892 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 16:14:22.896 [main] INFO  zsl.web.WebApplication - Started WebApplication in 1.815 seconds (process running for 2.52)
+2026-03-28 16:14:24.971 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 16:14:24.972 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 16:14:24.973 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-28 16:14:25.003 [http-nio-8080-exec-2] INFO  zsl.web.controller.empcontroller - 查询了id为1的部门数据
+2026-03-28 16:14:25.020 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 16:14:25.358 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44c44b00
+2026-03-28 16:14:25.360 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 16:14:32.850 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 16:14:32.855 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 16:14:32.857 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 16:14:32.861 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 16:14:35.890 [main] INFO  zsl.web.WebApplication - Starting WebApplication using Java 25.0.2 with PID 15496 (E:\VS\visual\Tilas\web\target\classes started by zzzzz in E:\VS\visual\Tilas)
+2026-03-28 16:14:35.892 [main] INFO  zsl.web.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-28 16:14:36.744 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 16:14:36.754 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:14:36.755 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 16:14:36.755 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-28 16:14:36.800 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 866 ms
+2026-03-28 16:14:37.336 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 16:14:37.361 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 16:14:37.365 [main] INFO  zsl.web.WebApplication - Started WebApplication in 1.818 seconds (process running for 2.532)
+2026-03-28 16:14:40.572 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 16:14:40.572 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 16:14:40.573 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-03-28 16:14:40.605 [http-nio-8080-exec-3] INFO  zsl.web.controller.empcontroller - 查询了id为111111的部门数据
+2026-03-28 16:14:40.626 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-28 16:14:40.959 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bbf9ee
+2026-03-28 16:14:40.961 [http-nio-8080-exec-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-28 16:14:41.013 [http-nio-8080-exec-3] ERROR z.w.controller.GlobalExceptionHander - 全局异常处理Cannot invoke "zsl.web.pojo.emp.setUpdataTime(java.time.LocalDateTime)" because "emp" is null
+2026-03-28 16:15:21.031 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 16:15:21.036 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-03-28 16:15:21.038 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-28 16:15:21.044 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-28 17:47:02.473 [main] INFO  zsl.web.WebApplication - Starting WebApplication using Java 25.0.2 with PID 7396 (E:\VS\visual\Tilas\web\target\classes started by zzzzz in E:\VS\visual\Tilas)
+2026-03-28 17:47:02.475 [main] INFO  zsl.web.WebApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-28 17:47:03.429 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-03-28 17:47:03.442 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-03-28 17:47:03.444 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-28 17:47:03.444 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-28 17:47:03.491 [main] INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 966 ms
+2026-03-28 17:47:04.101 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-03-28 17:47:04.127 [main] INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-03-28 17:47:04.138 [main] INFO  zsl.web.WebApplication - Started WebApplication in 2.102 seconds (process running for 3.0)
+2026-03-28 17:47:10.875 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-28 17:47:10.875 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-03-28 17:47:10.877 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-03-28 17:47:10.881 [http-nio-8080-exec-2] INFO  zsl.web.filter.Tokenfilter - 请求开始
+2026-03-28 17:47:39.606 [SpringApplicationShutdownHook] INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-28 17:47:39.620 [tomcat-shutdown] INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 配置文件的根节点，scan=true 表示修改配置文件会自动热加载 -->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <!-- 1. 定义全局常量：日志文件存放路径、输出格式 -->
+    <property name="LOG_PATH" value="./logs" />
+    // 日志输出格式, 可自定义 每个参数的作用是：
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+
+    <!-- ============================================== -->
+    <!-- 2. 控制台输出配置：开发时实时查看日志 -->
+    <!-- ============================================== -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 日志输出编码，解决乱码 -->
+        <encoder>
+            <charset>UTF-8</charset>
+            <!-- 日志输出格式，引用上面定义的常量 -->
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- ============================================== -->
+    <!-- 3. 文件输出配置：持久化日志，支持按天滚动 -->
+    <!-- ============================================== -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 当前正在写入的日志文件路径 -->
+        <file>${LOG_PATH}/app.log</file>
+        <!-- 日志追加写入（不覆盖原有文件） -->
+        <append>true</append>
+        <!-- 日志编码 -->
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+
+        <!-- 滚动策略：按天生成日志文件，自动归档 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 归档后的日志文件命名格式：logs/app-2026-03-24.log -->
+            <fileNamePattern>${LOG_PATH}/tlias-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 日志文件最大保留天数：30天，自动清理旧日志 -->
+            <maxHistory>30</maxHistory>
+            <!-- 所有日志文件总大小上限：10GB -->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <!-- ============================================== -->
+    <!-- 4. 根日志配置：绑定控制台+文件输出，设置全局日志级别 -->
+    <!-- ============================================== -->
+    <!-- 日志级别优先级：TRACE < DEBUG < INFO < WARN < ERROR -->
+    <root level="INFO">
+        <!-- 同时启用控制台和文件输出 -->
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>

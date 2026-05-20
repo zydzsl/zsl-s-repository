@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zsl.web.mapper.empmapper">
+    <update id="updata">
+        update employees
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="gender != null and gender != ''">
+                gender = #{gender},
+            </if>
+            <if test="deptId != null and deptId != ''">
+                dept_id = #{deptId},
+            </if>
+            <if test="job != null and job != ''">
+                job = #{job},
+            </if>
+            <if test="updataTime != null and updataTime != ''">
+                update_time = #{updataTime},
+            </if>
+        </set>
+        WHERE id = #{emp.id}
+    </update>
+
+    <!--    resultTypes是单个返回值类型  -->
+    <select id="Select" resultType="zsl.web.pojo.emp">
+        select e.*,t.name from employees e left join tilas_user t on e.dept_id = t.id
+<!--   where可以动态觉得and的添加，动态sql语句使用if标签 -->
+        <where>
+            <if test="name != null and name != ''">
+                    e.name like concat('%',#{name},'%')
+            </if>
+            <if test="gender != null and gender != ''">
+                and e.gender = #{gender}
+            </if>
+            <if test="job != null and job != ''">
+                and e.job = #{job}
+            </if>
+                order by e.update_time desc
+        </where>
+    </select>
+
+    <resultMap id="empResultMap" type="zsl.web.pojo.emp">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="gender" column="gender"/>
+        <result property="deptId" column="dept_id"/>
+        <result property="job" column="job"/>
+        <result property="hireTime" column="hire_time"/>
+        <result property="updataTime" column="update_time"/>
+        <collection property="emp_exprs" ofType="zsl.web.pojo.emp_expr">
+                <id property="id" column="ee_id"/>
+                <result property="empId" column="ee_emp_id"/>
+                <result property="beginDate" column="ee_begin_date"/>
+                <result property="endDate" column="ee_end_date"/>
+                <result property="job" column="ee_job"/>
+                <result property="company" column="ee_company"/>
+        </collection>
+    </resultMap>
+
+    <select id="getById" resultMap="empResultMap">
+        select
+            e.*,
+            ee.id ee_id,
+            ee.emp_id ee_emp_id,
+            ee.begin_date ee_begin_date,
+            ee.end_date ee_end_date,
+            ee.job ee_job,
+            ee.company ee_company
+        from employees e left join emp_expr ee on e.id = ee.emp_id
+        where e.id = #{id}
+
+    </select>
+
+
+    <delete id="delete">
+        delete from employees where id in
+        <foreach item="id" collection="ids" separator="," open="(" close=")">
+            #{id}
+        </foreach>
+
+    </delete>
+</mapper>
