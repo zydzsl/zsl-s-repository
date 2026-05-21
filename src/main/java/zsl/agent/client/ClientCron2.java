@@ -383,7 +383,7 @@ public class ClientCron2 {
                 ToolHanderBean.ToolExecutor executor = ToolHanderBean.TOOL_MAP.get(toolName);
                 output = executor.execute(args, toolName);
                 System.out.println("\n> " + toolName + " 执行结果：");
-                System.out.println(output.length() > 200 ? output.substring(0, 200) + "..." : output);
+                System.out.println(output.length() > 2000 ? output.substring(0, 2000) + "..." : output);
             }
 
             // 添加工具结果到历史
